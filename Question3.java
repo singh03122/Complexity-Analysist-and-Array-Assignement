@@ -1,4 +1,4 @@
-public class Question2 {
+public class Question3 {
     public static void main(String[] args) {
         System.out.println("Staring...");
         int array[][] = { { 1, 2, 3 },
@@ -7,13 +7,12 @@ public class Question2 {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
-                if (i == j || i + j >= array.length - 1) {
-                    System.out.println();
-                } else {
+                if (i == j || i + j == array.length - 1) {
                     System.out.print(array[i][j]);
+                } else {
+                    System.out.println();
                 }
             }
         }
     }
-
 }
